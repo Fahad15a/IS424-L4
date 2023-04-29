@@ -8,4 +8,4 @@ def calculate_tax(request, num):
     return HttpResponse(f"<h1>The total price after tax is {total}</h1>")
 def tax_rate(request):
     tax_rate = 0.15
-    return render(request, 'tax_rate.html', {'tax_rate': tax_rate})
+    return render(request,  {'tax_rate': tax_rate})
